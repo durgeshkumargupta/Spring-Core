@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+        
+        <!-- First Way -->
+        
+        <bean class="com.durgesh.collection.Car" name="car">
+        	<property name="carName">
+        		<list>
+        			<value>Audi</value>
+        			<value>BMW</value>
+        			<value>Suzuki</value>
+        		</list>
+        	</property>
+        	
+        	<property name="price">
+        		<list>
+        			<value>3000000</value>
+        			<value>5000000</value>
+        			<value>800000</value>
+        		</list>
+        	</property>
+        </bean>
+</beans>
